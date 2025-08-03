@@ -1,0 +1,13 @@
+git+https://github.com/huggingface/diffusers.git
+git+https://github.com/huggingface/transformers.git
+git+https://github.com/huggingface/accelerate.git
+git+https://github.com/huggingface/peft
+huggingface_hub
+sentencepiece
+torch
+pillow
+hf_xet
+gradio #if-gradio-sdk-in-use
+numpy
+torchvision
+protobuf
