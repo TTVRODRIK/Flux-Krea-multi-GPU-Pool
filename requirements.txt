@@ -7,7 +7,7 @@ sentencepiece
 torch
 pillow
 hf_xet
-gradio #if-gradio-sdk-in-use
 numpy
 torchvision
 protobuf
+gradio  # optional if using Gradio interface
