@@ -1,7 +1,7 @@
 
 # **Flux-Krea-multi-GPU-Pool**
 
-A Python-based multi-GPU image generation pipeline using Huggingface Diffusers with LoRA (Low-Rank Adaptation) support. This project distributes image generation workloads across all available GPUs on the system leveraging Python multiprocessing to optimize throughput and speed.
+A high-performance image generation script that leverages multiple GPUs to generate hyper-realistic images using the FLUX.1-Krea model with Super Realism LoRA weights. This implementation uses multiprocessing to distribute image generation across available GPUs for maximum efficiency.
 
 ## Features
 
