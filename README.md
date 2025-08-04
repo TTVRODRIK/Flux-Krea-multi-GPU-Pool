@@ -87,3 +87,4 @@ The script will detect your GPUs and perform image generation in parallel, savin
 ## Repository
 
 GitHub: [https://github.com/PRITHIVSAKTHIUR/Flux-Krea-multi-GPU-Pool](https://github.com/PRITHIVSAKTHIUR/Flux-Krea-multi-GPU-Pool)
+Flux.1-Krea-Merged-Dev : [prithivMLmods/flux1-krea-merged-dev](https://huggingface.co/collections/prithivMLmods/flux1-krea-merged-dev-688c0bbe7b68fe1aace8248d)
